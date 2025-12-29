@@ -69,8 +69,18 @@
     <p>© 2025 Batter'd Batch Bakery · Thank you for supporting small businesses</p>
   </footer>
 
-<script src="script.js"></script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+</script>
 </body>
 
+
 </html>
+
 
