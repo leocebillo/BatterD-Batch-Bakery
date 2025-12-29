@@ -47,7 +47,7 @@
     <div class="contact-info">
       <h2>How to Order</h2>
       <p>🧁 Custom orders are baked fresh from my home kitchen.</p>
-      <p>⏰ Please allow at least <strong>72 hours notice</strong> for custom cakes.</p>
+      <p>⏰ Please allow at least <strong>72 hours notice</strong> for custom orders.</p>
       <p>📍 Local pickup only.</p>
       <p>📷 You can also message me on Instagram for quicker replies.</p>
 
@@ -56,22 +56,24 @@
     </div>
 
     <!-- FORM -->
-    <form action="https://formspree.io/f/mwvkrnjw" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
+    <form action="https://formsubmit.co/email@gmail.com" method="POST">
 
-  <input type="email" name="email" placeholder="Your Email" required>
+  <!-- Settings -->
+  <input type="hidden" name="_subject" value="New Inquiry – Batter'd Batch Bakery">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
 
-  <textarea name="message"
-    placeholder="Tell me what you'd like to order..."
-    required></textarea>
-
-  <!-- Optional: email subject -->
-  <input type="hidden" name="_subject" value="New Bakery Order Inquiry">
-
-  <button type="submit">Send Message</button>
+  <!-- Optional: redirect after submit -->
   <input type="hidden" name="_next" value="thank-you.html">
 
+  <!-- Fields -->
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your message..." required></textarea>
+
+  <button type="submit">Send Message</button>
 </form>
+
 
 
   </section>
