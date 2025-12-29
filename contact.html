@@ -56,16 +56,23 @@
     </div>
 
     <!-- FORM -->
-    <div class="contact-form">
-      <h2>Send a Message</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Tell me what you'd like to order..." required></textarea>
-        <button type="submit">Send Message</button>
-        <form action="contact.php" method="POST">
-      </form>
-    </div>
+    <form action="https://formspree.io/f/mwvkrnjw" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message"
+    placeholder="Tell me what you'd like to order..."
+    required></textarea>
+
+  <!-- Optional: email subject -->
+  <input type="hidden" name="_subject" value="New Bakery Order Inquiry">
+
+  <button type="submit">Send Message</button>
+  <input type="hidden" name="_next" value="thank-you.html">
+
+</form>
+
 
   </section>
 
