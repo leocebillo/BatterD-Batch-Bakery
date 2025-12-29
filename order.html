@@ -1,0 +1,39 @@
+<section class="order-section">
+  <h1>Place an Order 🍰</h1>
+
+  <form name="orders"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field">
+
+    <!-- Required hidden fields -->
+    <input type="hidden" name="form-name" value="orders">
+    <input type="hidden" name="bot-field">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <select name="product" required>
+      <option value="">Select Item</option>
+      <option>Cupcakes (6)</option>
+      <option>Cupcakes (12)</option>
+      <option>Cake</option>
+      <option>Filler</option>
+    </select>
+
+    <select name="flavor" required>
+      <option value="">Flavor</option>
+      <option>Vanilla</option>
+      <option>Chocolate</option>
+      <option>Red Velvet</option>
+      <option>Lemon</option>
+    </select>
+
+    <input type="date" name="pickup_date" required>
+
+    <textarea name="notes"
+      placeholder="Design details, allergies, etc."></textarea>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</section>
