@@ -405,3 +405,55 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 8px 20px var(--shadow);
 }
+
+/* ===============================
+   GALLERY SECTION
+================================ */
+.gallery {
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--brown);
+}
+
+.gallery-subtitle {
+  margin: 0 auto 3rem;
+  color: #7a4a36;
+  font-size: 1.05rem;
+}
+
+/* Grid layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Images */
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 6px 15px var(--shadow);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 30px var(--shadow);
+}
+
+/* Instagram button */
+.gallery-btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
