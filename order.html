@@ -14,12 +14,15 @@
 
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
+    <input type="hidden" name="_next" value="/thank-you.html">
+
 
     <select name="product" required>
       <option value="">Select Item</option>
-      <option>Cupcakes (Dozen)</option>
+      <option>Cupcakes (6)</option>
+      <option>Cupcakes (12)</option>
       <option>Custom Cake</option>
-      <option>Cookies</option>
+      <option>Filler</option>
     </select>
 
     <select name="flavor" required>
@@ -27,7 +30,7 @@
       <option>Vanilla</option>
       <option>Chocolate</option>
       <option>Red Velvet</option>
-      <option>Lemon</option>
+      <option>Filler</option>
     </select>
 
     <input type="date" name="pickup_date" required>
